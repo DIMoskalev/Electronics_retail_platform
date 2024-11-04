@@ -8,7 +8,7 @@ from store.views import ProductViewSet, LinkListAPIView, LinkCreateAPIView, Link
 app_name = StoreConfig.name
 
 router = SimpleRouter()
-router.register("products", ProductViewSet, basename="products")
+router.register("product", ProductViewSet, basename="product")
 
 urlpatterns = [
     path("link/", LinkListAPIView.as_view(), name="link_list"),
