@@ -86,7 +86,7 @@ class Product(models.Model):
         help_text="Укажите дату выхода продукта на рынок"
     )
     supplier = models.ForeignKey(
-        'Link',
+        Link,
         verbose_name="Поставщик",
         on_delete=models.CASCADE
     )
