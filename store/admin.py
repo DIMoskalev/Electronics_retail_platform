@@ -6,7 +6,7 @@ from store.models import Link, Product
 @admin.register(Link)
 class LinkAdmin(admin.ModelAdmin):
     list_display = ("id", "name", "level", "country", "city", "debt", "supplier")
-    list_filter = ("city",)
+    list_filter = ("city", "country",)
     list_display_links = ("supplier",)
     actions = ('clear_debt',)
 
